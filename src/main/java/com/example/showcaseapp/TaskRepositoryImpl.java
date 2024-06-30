@@ -10,10 +10,7 @@ import java.util.UUID;
 @Repository
 public class TaskRepositoryImpl implements TaskRepository{
 
-    private final List<Task> tasks = new LinkedList<>() {{
-        this.add(new Task("первая задача"));
-        this.add(new Task("вторая задача"));
-    }};
+    private final List<Task> tasks = new LinkedList<>();
     @Override
     public List<Task> findAll() {
         return this.tasks ;
